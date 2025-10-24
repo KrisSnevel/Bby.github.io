@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário, Mariana ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- PASSWORD OVERLAY -->
+  <div id="passwordOverlay">
+    <h1>🎉 Feliz Aniversário, Mariana! 🎉</h1>
+    <p>Digite a data especial para entrar:</p>
+    <input type="password" id="sitePassword" placeholder="DDMMYY">
+    <button id="enterPassword">Entrar</button>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="mainContent" style="display:none;">
+    
+    <!-- Floating hearts -->
+    <div class="hearts">💖 💕 💗 💓 💞 💘 💝</div>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+      <h1>🎂Happy birthday my love</h1>
+      <p>Você torna cada momento mágico 💖</p>
+      <a href="#together" class="scroll-btn">Scroll Down ↓</a>
+    </section>
+
+    <!-- Timer Section -->
+    <section id="together" class="timer fade-in">
+      <h2>We've been together for </h2>
+      <div class="timer-box">
+        <p id="timeTogether">Carregando...</p>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey fade-in">
+      <h2>Our story </h2>
+      <p id="journeyText"></p>
+    </section>
+
+    <!-- Envelope / Letter Section -->
+    <section class="letter-section fade-in">
+      <h2>Para Mariana dos Ramos 💌</h2>
+      <div class="envelope" id="envelope">
+        <div class="flap"></div>
+        <div class="letter">
+          <button id="closeLetter">✖</button>
+          <p>
+            Minha amada Mariana,<br><br>
+            Às vezes as palavras não são suficientes para expressar tudo o que sinto por ti.<br>
+            Passámos por dias difíceis, discussões e lágrimas, mas em cada um deles percebi o quanto te amo.<br>
+            És a minha paz depois da tempestade, a razão pela qual continuo a acreditar no amor verdadeiro.<br><br>
+            Mesmo quando o mundo parece desabar, é o teu sorriso que me traz de volta.<br>
+            Eu prometo continuar a lutar por nós, a crescer contigo e a amar-te em cada versão que a vida nos der.<br><br>
+            Com todo o meu coração,<br>
+            <strong>Kris ❤️</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Slideshow -->
+    <section class="slideshow fade-in">
+      <h2>Nossas Memórias 📸</h2>
+      <div class="photo-slider">
+        <div class="slider-track">
+          <div class="slide"><img src="photo1.jpg" alt="Us 1"></div>
+          <div class="slide"><img src="photo2.jpg" alt="Us 2"></div>
+          <div class="slide"><img src="photo3.jpg" alt="Us 3"></div>
+          <div class="slide"><img src="photo4.jpg" alt="Us 4"></div>
+        </div>
+        <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz fade-in">
+      <h2>Nosso Quiz Divertido 🎮</h2>
+      <div id="quizContainer"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
